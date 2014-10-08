@@ -3,10 +3,14 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.8'
+gem 'pg', '0.15.1'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
-  gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '2.13.1'
+  gem 'guard-rspec', '2.5.0'
+  gem 'spork-rails', '4.0.0'
+  gem 'guard-spork', '1.5.0'
+  gem 'childprocess', '0.5.5'
 end
 
 group :test do
@@ -20,7 +24,6 @@ end
 
 
 group :production do
-  gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
 
@@ -34,7 +37,11 @@ gem 'uglifier', '2.1.1'
 gem 'coffee-rails', '~> 4.0.1'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
+gem 'bootstrap-sass', '~> 3.2.0'
 
+
+
+gem 'autoprefixer-rails'
 # Use jquery as the JavaScript library
 gem 'jquery-rails', '3.0.4'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
