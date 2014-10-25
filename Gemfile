@@ -26,6 +26,7 @@ end
 
 group :production do
   gem 'rails_12factor', '0.0.2'
+  gem 'unicorn', '4.8.3'
 end
 
 gem 'nokogiri', '~> 1.6.3.1'
@@ -40,6 +41,8 @@ gem 'coffee-rails', '~> 4.0.1'
 # gem 'therubyracer',  platforms: :ruby
 gem 'bootstrap-sass', '~> 3.2.0'
 
+
+gem 'unicorn', '4.8.3'
 
 
 gem 'autoprefixer-rails'
