@@ -13,7 +13,7 @@ ElloClone::Application.routes.draw do
   match '/login', to: 'sessions#new', via: 'get'
   match '/login', to: 'sessions#create', via: 'post'
   match '/logout', to: 'sessions#destroy', via: 'delete'
-
+  
 
 
   # The priority is based upon order of creation: first created -> highest priority.
